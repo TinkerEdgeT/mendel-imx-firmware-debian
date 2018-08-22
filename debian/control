@@ -1,0 +1,9 @@
+Source: imx-firmware
+Maintainer: AIY Projects <support-aiyprojects@google.com>
+Build-Depends: debhelper
+
+Package: imx-firmware
+Section: misc
+Priority: required
+Architecture: arm64
+Description: Binary firmwares required for i.MX8

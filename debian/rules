@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+# export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_strip:
+	true
+
+override_dh_auto_install:
+	install -d debian/imx-firmware/usr/share/imx-firmware/imx8m
+	install -m 644 -o 0 -g 0 -t debian/imx-firmware/usr/share/imx-firmware/imx8m imx8m/*
+	chmod +x debian/imx-firmware/usr/share/imx-firmware/imx8m/mkimage_imx8
