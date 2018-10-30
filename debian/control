@@ -6,7 +6,7 @@ Priority: optional
 
 Package: imx-firmware
 Section: misc
-Priority: required
+Priority: optional
 Depends: firmware-atheros
 Architecture: all
 Description: Binary firmwares required for i.MX8
